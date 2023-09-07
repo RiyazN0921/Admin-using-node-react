@@ -1,0 +1,274 @@
+/* Heebo Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --F01: 'Heebo', sans-serif;
+  --C01: #171724;
+  --C02: #31c77f;
+  --C03: #171724;
+  --C04: #5d5d66;
+  --C05: #FFFFFF;
+  --C06: #23232f;
+  --S01: rgba(23, 23, 36, 0.1);
+  --B01: #e8e8e9;
+  --BGLG01: linear-gradient(90deg, #b2edff 0%, #e9dbff 25%, #c1ffe1 50%, #b2edff 75%, #e9dbff 100%);
+  --BGLG02: linear-gradient(90deg, #f2f5d0 0%, #b9d8ed 25%, #c1fcd3 50%, #bfffc7 75%, #d9ecc7 100%);
+}
+
+body {
+  position: relative;
+  font-size: 14px;
+  font-family: var(--F01);
+}
+
+body::-webkit-scrollbar-track {
+  border: 1px solid var(--B01);
+  background-color: var(--C05);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--C05);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--C02);
+}
+
+.bg-G {
+  background-size: 400% auto;
+  background-position: 100% 50%;
+  background-image: var(--BGLG01);
+  animation: gradientMotion 20s infinite linear;
+}
+
+.bg-cd-G {
+  background-size: 400% auto;
+  background-position: 100% 50%;
+  background-image: var(--BGLG02);
+  animation: gradientMotioncard 20s infinite linear;
+}
+
+@keyframes gradientMotion {
+  0% {
+    background-position-x: 100%
+  }
+
+  100% {
+    background-position-x: 0
+  }
+}
+
+@keyframes gradientMotioncard {
+  0% {
+    background-position-x: 0
+  }
+
+  25% {
+    background-position-x: 25%
+  }
+
+  50% {
+    background-position-x: 50%
+  }
+
+  75% {
+    background-position-x: 75%
+  }
+
+  100% {
+    background-position-x: 100%
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #171724
+}
+
+h1,
+.h1 {
+  font-size: calc(1.5375rem + 3.45vw)
+}
+
+@media (min-width: 1200px) {
+
+  h1,
+  .h1 {
+    font-size: 4.125rem
+  }
+}
+
+h2,
+.h2 {
+  font-size: calc(1.4125rem + 1.95vw)
+}
+
+@media (min-width: 1200px) {
+
+  h2,
+  .h2 {
+    font-size: 2.875rem
+  }
+}
+
+h3,
+.h3 {
+  font-size: calc(1.35rem + 1.2vw)
+}
+
+@media (min-width: 1200px) {
+
+  h3,
+  .h3 {
+    font-size: 2.25rem
+  }
+}
+
+h4,
+.h4 {
+  font-size: calc(1.3125rem + .75vw)
+}
+
+@media (min-width: 1200px) {
+
+  h4,
+  .h4 {
+    font-size: 1.875rem
+  }
+}
+
+h5,
+.h5 {
+  font-size: calc(1.275rem + .3vw)
+}
+
+@media (min-width: 1200px) {
+
+  h5,
+  .h5 {
+    font-size: 1.5rem
+  }
+}
+
+h6,
+.h6 {
+  font-size: calc(1.25625rem + .075vw)
+}
+
+@media (min-width: 1200px) {
+
+  h6,
+  .h6 {
+    font-size: 1.3125rem
+  }
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+label .requred {
+  color: red;
+}
+
+p {
+  font-size: 1.0625rem;
+  color: var(--C04);
+}
+
+.link_text {
+  color: var(--C04);
+  text-decoration: none;
+}
+
+.link_text:hover {
+  color: var(--C02);
+}
+
+.link {
+  color: var(--C04);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: var(--C02);
+}
+
+
+.btn-01 {
+  border-radius: 25px;
+  background: var(--C01);
+  color: var(--C05);
+  padding: 10px 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.btn-01:hover {
+  background: var(--C02);
+  color: var(--C05);
+}
+
+.btn-02 {
+  border-radius: 25px;
+  background: var(--C02);
+  color: var(--C05);
+  padding: 10px 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.btn-02:hover {
+  background: var(--C01);
+  color: var(--C05);
+}
+
+.input-group-lg>.btn,
+.input-group-lg>.form-control,
+.input-group-lg>.form-select,
+.input-group-lg>.input-group-text {
+  padding: 1rem;
+  font-size: 16px;
+  color: var(--C04);
+  border-radius: 0.6rem;
+  border-color: var(--B01) !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--C02) !important;
+}
+
+.social_nav .nav-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--C05);
+  border: 1px solid var(--C01);
+  color: var(--C01);
+  margin: 0px 7.5px;
+  font-size: 16px;
+}
+
+.social_nav .nav-link:hover {
+  background: var(--C02) !important;
+}

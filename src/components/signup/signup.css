@@ -1,0 +1,23 @@
+.register{
+    padding: 50px 0px;
+    height: 100%;
+}
+.register_card {
+    padding: 2rem;
+    border-radius: 0.875rem;
+    background-color: #fff;
+    box-shadow: 5px 8px 28px var(--S01);
+}
+
+.register_card p {
+    color: var(--C04);
+}
+
+.register_card h4 {
+    font-weight: 600;
+}
+
+.btn-01 {
+    border-radius: 0.6rem;
+    padding: 15px 30px;
+}
